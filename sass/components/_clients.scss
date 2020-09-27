@@ -1,0 +1,47 @@
+.clients__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $main-color;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 50px;
+}
+.clients__menu {
+  display: flex;
+  align-items: center;
+}
+
+.clients__items {
+  margin-right: 30px;
+}
+.clients__items:last-child {
+  margin-right: 0px;
+}
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  transition: 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__link:hover {
+  border: 1px solid $active-color;
+  border-radius: 4px;
+}
+.clients__link:hover .clients__icon {
+  fill: $active-color;
+}
+.clients__icon {
+  fill: #afb1b8;
+  transition: 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

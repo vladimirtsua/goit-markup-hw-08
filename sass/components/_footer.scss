@@ -1,0 +1,129 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  align-items: center;
+}
+.footer__navigation {
+  margin-right: 70px;
+}
+
+.footer__address {
+  color: $hero-color;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  padding-top: 20px;
+}
+.footer__link {
+  padding-top: 9px;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: $footer-color;
+}
+
+.footer__social__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $pbutton-color;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.footer__social__menu {
+  display: flex;
+}
+.footer__social__items {
+  border-radius: 50%;
+
+  transition: 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__social__items:not(:last-child) {
+  margin-right: 10px;
+}
+.footer__social__items:hover {
+  background-color: #2196f3;
+}
+.footer__social__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.footer__social__svg {
+  fill: $pbutton-color;
+}
+.follow {
+  margin-left: 93px;
+}
+.follow__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $pbutton-color;
+  padding-bottom: 20px;
+  margin: 0px;
+}
+.follow__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.follow input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  align-items: center;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  color: $text-color;
+}
+.follow__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background-color: #2196f3;
+  background-repeat: no-repeat;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  cursor: pointer;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: $hero-color;
+}
+.follow__button:hover,
+.follow__button:active {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.follow__element {
+  margin-left: 10px;
+  fill: $pbutton-color;
+}
