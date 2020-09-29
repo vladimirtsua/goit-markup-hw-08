@@ -1,26 +1,63 @@
-.header .flexbox {
+.header {
   align-items: center;
   flex-grow: 1;
   border-bottom: 1px solid #ececec;
+
+  @include for-size(phone-only) {
+    max-width: 479px;
+  }
+  @include for-size(phone) {
+    width: 480;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .header__container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+
+  @include for-size(tablet) {
+    width: 768px;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+  }
 }
+
 .header__container__navigation {
-  display: flex;
-  align-items: center;
+  @include for-size(phone) {
+    display: none;
+  }
+  @include for-size(phone-only) {
+    display: none;
+  }
+  @include for-size(tablet) {
+    display: flex;
+    align-items: center;
+  }
+  @include for-size(desktop) {
+  }
 }
+
 .header__container__logo {
-  margin-right: 90px;
+  @include for-size(tablet) {
+    margin-right: 80px;
+  }
+  @include for-size(desktop) {
+    margin-right: 90px;
+  }
 }
 
 .header__menu .link {
-  color: var(--main-color);
+  color: $main-color;
   text-decoration: none;
 
   transition: 250ms ease;
@@ -69,10 +106,16 @@
 }
 
 .adress {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 305px;
+  @include for-size(tablet) {
+    display: block;
+    margin-left: 84px;
+  }
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 305px;
+  }
 }
 .adress__link {
   font-family: Roboto;
@@ -82,17 +125,33 @@
   letter-spacing: 0.02em;
 }
 .adress__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: $text-color;
   text-decoration: none;
 
   transition: 250ms ease;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .adress__link:not(:last-child) {
-  margin-right: 30px;
+  @include for-size(tablet) {
+    margin-right: 0px;
+    padding-bottom: 10px;
+  }
+  @include for-size(desktop) {
+    margin-right: 30px;
+    padding-bottom: 0px;
+  }
+}
+.adress__link:last-child {
+  margin-right: 15px;
+
+  @include for-size(desktop) {
+    margin-right: 0px;
+  }
 }
 .adress__link:hover .adress__svg {
   fill: $active-color;
@@ -105,4 +164,46 @@
 .adress__svg {
   fill: $text-color;
   margin-right: 10px;
+}
+
+.header__phone-menu {
+  box-sizing: border-box;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 60px;
+
+  @include for-size(tablet) {
+    display: none;
+  }
+  @include for-size(desktop) {
+    display: none;
+  }
+}
+.header__phone-menu__logo {
+  @include for-size(phone) {
+    display: inline-block;
+    margin-right: 265px;
+    padding-top: 16px;
+  }
+  @include for-size(phone-only) {
+    display: inline-block;
+    margin-right: 200px;
+    padding-top: 16px;
+  }
+}
+
+.header__phone-menu__button {
+  padding-top: 16px;
+
+  @include for-size(phone) {
+    display: inline-block;
+    border: none;
+    background: transparent;
+  }
+  @include for-size(phone-only) {
+    display: inline-block;
+    border: none;
+    background: transparent;
+  }
 }

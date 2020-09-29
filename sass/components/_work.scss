@@ -1,17 +1,28 @@
 .work__menu {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
+  @include for-size(phone) {
+    display: none;
+  }
+  @include for-size(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
 }
 .work__title {
-  color: $main-color;
-  font-weight: 700;
-  font-size: 36px;
-  text-align: center;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  padding-bottom: 50px;
-  margin: 0px;
+  @include for-size(phone) {
+    display: none;
+  }
+  @include for-size(desktop) {
+    display: block;
+    color: $main-color;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+    margin: 0px;
+  }
 }
 .work__items {
   width: calc((100%-30px * 2) / 3);

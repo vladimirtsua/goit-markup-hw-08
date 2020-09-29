@@ -1,19 +1,47 @@
 .team {
   background: #f5f4fa;
 }
+.team__div {
+  margin: 0px;
+
+  @include for-size(desktop) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .team__title {
-  padding-bottom: 50px;
-  font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   margin: 0px;
+
+  @include for-size(phone) {
+    width: 480px;
+    padding-bottom: 30px;
+    font-size: 28px;
+  }
+
+  @include for-size(desktop) {
+    padding-bottom: 50px;
+    font-size: 36px;
+  }
 }
 .team__menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   padding: 0px;
+
+  @include for-size(phone) {
+    display: block;
+    width: 100%;
+  }
+  @include for-size(tablet) {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include for-size(desktop) {
+    justify-content: space-between;
+    width: 1200px;
+  }
 }
 
 .team__items {
@@ -29,7 +57,7 @@
 }
 
 .team__name {
-  color: var(--main-color);
+  color: $main-color;
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
