@@ -4,8 +4,41 @@
   padding-bottom: 60px;
   align-items: center;
 }
+.foote__container {
+  @include for-size(phone) {
+    display: block;
+    text-align: center;
+    width: 480px;
+    margin: 0px;
+  }
+}
 .footer__navigation {
-  margin-right: 70px;
+  @include for-size(phone) {
+    width: 480px;
+  }
+  @include for-size(desktop) {
+    width: 768px;
+    text-align: left;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+    text-align: left;
+    margin-right: 70px;
+  }
+}
+.footer__logo img {
+  @include for-size(phone) {
+    display: inline-block;
+    text-align: center;
+    width: 154px;
+  }
+  @include for-size(desktop) {
+    text-align: left;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+    text-align: left;
+  }
 }
 
 .footer__address {
@@ -23,7 +56,20 @@
   text-decoration: none;
   color: $footer-color;
 }
-
+.footer__social {
+  @include for-size(phone) {
+    display: inline-block;
+    align-items: center;
+    width: 480px;
+  }
+  @include for-size(desktop) {
+    text-align: left;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+    text-align: left;
+  }
+}
 .footer__social__title {
   font-weight: bold;
   font-size: 14px;

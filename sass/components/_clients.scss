@@ -1,29 +1,65 @@
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .clients__title {
   font-weight: bold;
-  font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
   color: $main-color;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-bottom: 50px;
+
+  @include for-size(phone) {
+    width: 480px;
+    padding-bottom: 30px;
+    font-size: 33px;
+  }
+  @include for-size(tablet) {
+    width: 768px;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+    padding-bottom: 50px;
+    font-size: 36px;
+  }
 }
 .clients__menu {
-  display: flex;
-  align-items: center;
+  @include for-size(phone) {
+    width: 450px;
+  }
+  @include for-size(tablet) {
+    width: 768px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+  }
 }
 
 .clients__items {
   margin-right: 30px;
 }
+.clients__items:nth-child(3n) {
+  @include for-size(tablet) {
+    margin-right: 0px;
+  }
+
+  @include for-size(desktop) {
+    margin-right: 30px;
+  }
+}
 .clients__items:last-child {
   margin-right: 0px;
 }
 .clients__link {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;

@@ -1,7 +1,15 @@
-.work__menu {
+.work {
   @include for-size(phone) {
     display: none;
   }
+  @include for-size(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+}
+
+.work__menu {
   @include for-size(desktop) {
     display: flex;
     flex-wrap: wrap;

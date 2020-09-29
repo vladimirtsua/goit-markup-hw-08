@@ -46,6 +46,10 @@
 }
 .quality__items:nth-child(4n) {
   margin-right: 0px;
+
+  @include for-size(phone) {
+    padding-bottom: 30px;
+  }
 }
 .quality__items:nth-child(2n) {
   @include for-size(tablet) {
