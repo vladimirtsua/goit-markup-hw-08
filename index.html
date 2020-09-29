@@ -21,6 +21,7 @@
           <a class="header__container__logo" href="./index.html">
             <img src="./img/WebStudio.svg" alt="логотип"
           /></a>
+
           <ul class="listt header__menu">
             <li class="header__menu__item">
               <a href="./index.html" class="link current">Студия </a>
@@ -33,14 +34,15 @@
               <a href="#contacts" class="link">Контакты </a>
             </li>
           </ul>
+
           <address class="adress">
-            <a class="adress__link" href="mailto:info@devstudio.com">
+            <a class="adress__link mailto" href="mailto:info@devstudio.com">
               <svg class="adress__svg" width="16" height="12">
                 <use href="./img/symbol-defs.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
             >
-            <a class="adress__link" href="tel:+380961111111">
+            <a class="adress__link tel" href="tel:+380961111111">
               <svg class="adress__svg" width="10" height="16">
                 <use href="./img/symbol-defs.svg#icon-tel"></use>
               </svg>
@@ -49,6 +51,28 @@
           </address>
         </nav>
       </div>
+      <nav class="header__phone-menu">
+        <a class="header__phone-menu__logo" href="./index.html" width="135">
+          <img src="./img/WebStudio.svg" alt="логотип"
+        /></a>
+
+        <button type="button" class="header__phone-menu__button is-open">
+          <svg
+            width="24px"
+            height="24px"
+            aria-label="переключатель мобильного меню"
+          >
+            <use
+              class="header__menu__icon-menu"
+              href="./img/symbol-defs.svg#icon-menu_24px"
+            ></use>
+            <use
+              class="header__menu__icon-close"
+              href="./img/symbol-defs.svg#icon-close_24px"
+            ></use>
+          </svg>
+        </button>
+      </nav>
     </header>
     <main>
       <!-- герой -->
@@ -65,7 +89,7 @@
 
       <!-- качества  -->
       <section class="section quality">
-        <div class="conteiner flexbox">
+        <div class="conteiner quality__div">
           <ul class="listt quality__menu">
             <li class="quality__items">
               <h3 class="quality__title">Внимание к деталям</h3>
@@ -134,7 +158,7 @@
       </section>
       <!-- наша команда -->
       <section class="section team">
-        <div class="conteiner flex">
+        <div class="conteiner team__div">
           <h2 class="team__title">Наша команда</h2>
           <ul class="listt team__menu">
             <li class="team__items">
