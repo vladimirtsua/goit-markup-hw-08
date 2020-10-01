@@ -1,52 +1,73 @@
 .footer {
+  width: 100%;
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  display: block;
   align-items: center;
+  text-align: center;
 }
-.foote__container {
-  @include for-size(phone) {
-    display: block;
-    text-align: center;
-    width: 480px;
-    margin: 0px;
+.footer__container {
+  @include for-size(desktop) {
+    width: 1200px;
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .footer__navigation {
-  @include for-size(phone) {
-    width: 480px;
-  }
-  @include for-size(desktop) {
-    width: 768px;
-    text-align: left;
-  }
-  @include for-size(desktop) {
-    width: 1200px;
-    text-align: left;
-    margin-right: 70px;
-  }
-}
-.footer__logo img {
-  @include for-size(phone) {
-    display: inline-block;
-    text-align: center;
-    width: 154px;
-  }
-  @include for-size(desktop) {
-    text-align: left;
-  }
-  @include for-size(desktop) {
-    width: 1200px;
-    text-align: left;
-  }
-}
+  margin-bottom: 60px;
 
+  @include for-size(tablet) {
+    width: 232px;
+    margin-right: 165px;
+    margin-left: 61px;
+  }
+  @include for-size(desktop) {
+    margin-right: 93px;
+    margin-left: 0px;
+  }
+}
+.footer__tablet {
+  @include for-size(tablet) {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @include for-size(desktop) {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+.footer__desktop {
+  @include for-size(desktop) {
+    display: flex;
+  }
+}
+.footer__navigation img {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include for-size(desktop) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 .footer__address {
   color: $hero-color;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   padding-top: 20px;
+
+  @include for-size(desktop) {
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 .footer__link {
   padding-top: 9px;
@@ -56,20 +77,7 @@
   text-decoration: none;
   color: $footer-color;
 }
-.footer__social {
-  @include for-size(phone) {
-    display: inline-block;
-    align-items: center;
-    width: 480px;
-  }
-  @include for-size(desktop) {
-    text-align: left;
-  }
-  @include for-size(desktop) {
-    width: 1200px;
-    text-align: left;
-  }
-}
+
 .footer__social__title {
   font-weight: bold;
   font-size: 14px;
@@ -79,10 +87,17 @@
   color: $pbutton-color;
   margin-top: 0px;
   margin-bottom: 20px;
+
+  @include for-size(desktop) {
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .footer__social__menu {
   display: flex;
+  justify-content: center;
 }
 .footer__social__items {
   border-radius: 50%;
@@ -111,7 +126,16 @@
   fill: $pbutton-color;
 }
 .follow {
-  margin-left: 93px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+
+  @include for-size(tablet) {
+    margin-top: 0px;
+  }
+  @include for-size(desktop) {
+    margin-right: 0px;
+  }
 }
 .follow__title {
   font-family: Roboto;
@@ -124,6 +148,11 @@
   color: $pbutton-color;
   padding-bottom: 20px;
   margin: 0px;
+
+  @include for-size(desktop) {
+    text-align: start;
+    display: block;
+  }
 }
 .follow__container {
   display: flex;
@@ -133,7 +162,7 @@
 .follow input {
   width: 358px;
   height: 50px;
-  margin-right: 12px;
+
   align-items: center;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -142,6 +171,17 @@
   border-radius: 4px;
   background-color: transparent;
   color: $text-color;
+
+  @include for-size(phone) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include for-size(desktop) {
+    width: 358px;
+    margin-right: 12px;
+    margin-left: 0px;
+  }
 }
 .follow__button {
   display: flex;
@@ -162,6 +202,14 @@
   line-height: 30px;
   letter-spacing: 0.06em;
   color: $hero-color;
+
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include for-size(desktop) {
+    margin-top: 0px;
+  }
 }
 .follow__button:hover,
 .follow__button:active {

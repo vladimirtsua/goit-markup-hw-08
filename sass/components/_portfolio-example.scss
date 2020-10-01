@@ -5,21 +5,55 @@
 .example__menu {
   display: flex;
   flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include for-size(phone-only) {
+    width: 430px;
+  }
+  @include for-size(phone) {
+    width: 480px;
+  }
+  @include for-size(tablet) {
+    width: 768px;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+  }
 }
 .example__items {
-  width: calc((100% - 6 * 30px) / 9);
+  @include for-size(desktop) {
+    width: calc((100% - 6 * 30px) / 9);
+  }
 }
 .example__items:nth-child(3n) {
-  margin-right: 0px;
+  @include for-size(desktop) {
+    margin-right: 0px;
+  }
 }
 
 .example__items {
-  width: 370px;
-  margin-right: 30px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+
+  @include for-size(phone-only) {
+    width: 430px;
+  }
+  @include for-size(phone) {
+    width: 450px;
+  }
+  @include for-size(tablet) {
+    width: 354px;
+    margin-left: 0px;
+  }
+  @include for-size(desktop) {
+    width: 370px;
+    margin-right: 30px;
+  }
 }
 .example__items:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),

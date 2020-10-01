@@ -31,7 +31,7 @@ a {
 }
 
 .conteiner {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -54,7 +54,7 @@ a {
   $desktop: 1200px;
 
   @if $range == phone-only {
-    @media (max-width: #{$phone - 1}) {
+    @media (max-width: #{$phone - 1} ) {
       @content;
     }
   } @else if $range == phone {

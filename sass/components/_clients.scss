@@ -13,28 +13,30 @@
   margin-bottom: 0px;
 
   @include for-size(phone) {
-    width: 480px;
     padding-bottom: 30px;
     font-size: 33px;
   }
-  @include for-size(tablet) {
-    width: 768px;
-  }
+
   @include for-size(desktop) {
-    width: 1200px;
     padding-bottom: 50px;
     font-size: 36px;
   }
 }
 .clients__menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include for-size(phone-only) {
+    width: 430px;
+  }
+
   @include for-size(phone) {
-    width: 450px;
+    width: 480px;
   }
   @include for-size(tablet) {
     width: 768px;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
   }
   @include for-size(desktop) {
     width: 1200px;
@@ -43,30 +45,55 @@
 
 .clients__items {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
+.clients__items:nth-child(2n) {
+  @include for-size(phone-only) {
+    margin-right: 0px;
+  }
+  @include for-size(phone) {
+    margin-right: 0px;
+  }
+  @include for-size(tablet) {
+    margin-right: 30px;
+  }
+}
+
 .clients__items:nth-child(3n) {
   @include for-size(tablet) {
     margin-right: 0px;
   }
-
   @include for-size(desktop) {
     margin-right: 30px;
   }
 }
+
 .clients__items:last-child {
   margin-right: 0px;
 }
 .clients__link {
+  width: 170px;
   align-items: center;
   display: flex;
   justify-content: center;
-  width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
   transition: 250ms ease;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include for-size(phone) {
+    width: 210px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @include for-size(tablet) {
+    width: 225px;
+  }
+  @include for-size(desktop) {
+    width: 170px;
+  }
 }
 
 .clients__link:hover {

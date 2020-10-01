@@ -1,11 +1,13 @@
 .work {
-  @include for-size(phone) {
-    display: none;
-  }
+  display: none;
+
   @include for-size(desktop) {
+    width: 1200px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -17,9 +19,8 @@
   }
 }
 .work__title {
-  @include for-size(phone) {
-    display: none;
-  }
+  display: none;
+
   @include for-size(desktop) {
     display: block;
     color: $main-color;

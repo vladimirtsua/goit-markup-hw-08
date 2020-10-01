@@ -1,15 +1,26 @@
-.portfolio_navigation .flexbox {
-  align-items: center;
+.portfolio_navigation {
+  @include for-size(tablet) {
+    align-items: center;
+  }
 }
 .portfolio__menu {
   display: flex;
-  justify-content: center;
-  margin: auto;
+  flex-wrap: wrap;
   padding-top: 94px;
   padding-bottom: 0px;
+
+  @include for-size(tablet) {
+    justify-content: center;
+    margin: auto;
+  }
 }
 .portfolio__menu__item {
   margin-right: 8px;
+  margin-bottom: 15px;
+
+  @include for-size(tablet) {
+    margin-bottom: 0px;
+  }
 }
 
 .portfolio__menu__item:last-child {
