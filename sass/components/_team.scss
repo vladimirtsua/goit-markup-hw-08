@@ -37,6 +37,7 @@
   @include for-size(tablet) {
     width: 768px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
   @include for-size(desktop) {

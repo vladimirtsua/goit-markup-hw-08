@@ -2,40 +2,28 @@
   display: none;
 
   @include for-size(desktop) {
-    width: 1200px;
     display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    padding-left: 0px;
-    padding-right: 0px;
   }
 }
 
 .work__menu {
-  @include for-size(desktop) {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    padding: 0px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
 }
 .work__title {
-  display: none;
-
-  @include for-size(desktop) {
-    display: block;
-    color: $main-color;
-    font-weight: 700;
-    font-size: 36px;
-    text-align: center;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    padding-bottom: 50px;
-    margin: 0px;
-  }
+  color: $main-color;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  padding-bottom: 50px;
+  margin: 0px;
 }
 .work__items {
-  width: calc((100%-30px * 2) / 3);
+  margin-right: 30px;
 }
 .work__items:last-child {
   margin-right: 0px;

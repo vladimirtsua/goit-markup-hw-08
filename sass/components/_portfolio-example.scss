@@ -16,6 +16,7 @@
   }
   @include for-size(desktop) {
     width: 1200px;
+    justify-content: center;
   }
 }
 .example__items {
@@ -38,7 +39,6 @@
   box-sizing: border-box;
 
   @include for-size(phone) {
-    width: 450px;
   }
   @include for-size(tablet) {
     width: 354px;

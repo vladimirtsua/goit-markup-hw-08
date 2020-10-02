@@ -25,22 +25,8 @@
 .clients__menu {
   display: flex;
   flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
 
-  @include for-size(phone-only) {
-    width: 430px;
-  }
-
-  @include for-size(phone) {
-    width: 480px;
-  }
-  @include for-size(tablet) {
-    width: 768px;
-  }
-  @include for-size(desktop) {
-    width: 1200px;
-  }
+  justify-content: center;
 }
 
 .clients__items {
