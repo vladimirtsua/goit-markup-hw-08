@@ -21,26 +21,28 @@
           <a class="header__container__logo" href="./index.html">
             <img src="./img/WebStudio.svg" alt="логотип"
           /></a>
+
           <ul class="listt header__menu">
             <li class="header__menu__item">
-              <a href="./index.html" class="link">Студия </a>
+              <a href="./index.html" class="link current">Студия </a>
             </li>
 
             <li class="header__menu__item">
-              <a href="./portfolio.html" class="link current"> Портфолио </a>
+              <a href="./portfolio.html" class="link"> Портфолио </a>
             </li>
             <li class="header__menu__item">
               <a href="#contacts" class="link">Контакты </a>
             </li>
           </ul>
+
           <address class="adress">
-            <a class="adress__link" href="mailto:info@devstudio.com">
+            <a class="adress__link mailto" href="mailto:info@devstudio.com">
               <svg class="adress__svg" width="16" height="12">
                 <use href="./img/symbol-defs.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
             >
-            <a class="adress__link" href="tel:+380961111111">
+            <a class="adress__link tel" href="tel:+380961111111">
               <svg class="adress__svg" width="10" height="16">
                 <use href="./img/symbol-defs.svg#icon-tel"></use>
               </svg>
@@ -49,12 +51,81 @@
           </address>
         </nav>
       </div>
+
+      <nav class="header__phone-menu">
+        <div class="header__phone-menu-top">
+          <a class="header__phone-menu__logo" href="./index.html" width="135">
+            <img src="./img/WebStudio.svg" alt="логотип"
+          /></a>
+
+          <button
+            type="button"
+            class="header__phone-menu__button is-open"
+            aria-expanded="false"
+            aria-controls="header__phone-menu__div"
+            data-menu-button
+          >
+            <svg
+              width="24px"
+              height="24px"
+              aria-label="переключатель мобильного меню"
+            >
+              <use
+                class="header__menu__icon-menu is-open"
+                href="./img/symbol-defs.svg#icon-menu_24px"
+              ></use>
+              <use
+                class="header__menu__icon-close is-open"
+                href="./img/symbol-defs.svg#icon-close_24px"
+              ></use>
+            </svg>
+          </button>
+        </div>
+
+        <div
+          class="header__phone-menu__div is-open"
+          id="header__phone-menu__div"
+          data-menu
+        >
+          <ul class="header__phone-menu__list">
+            <li class="header__phone-menu__item">
+              <a href="./index.html" class="link current">Студия </a>
+            </li>
+
+            <li class="header__phone-menu__item">
+              <a href="./portfolio.html" class="link"> Портфолио </a>
+            </li>
+            <li class="header__phone-menu__item">
+              <a href="#contacts" class="link">Контакты </a>
+            </li>
+          </ul>
+
+          <address class="phone-menu__adress">
+            <a
+              class="phone-menu__adress__link mailto"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="adress__svg" width="16" height="12">
+                <use href="./img/symbol-defs.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+
+            <a class="phone-menu__adress__link tel" href="tel:+380961111111">
+              <svg class="adress__svg" width="10" height="16">
+                <use href="./img/symbol-defs.svg#icon-tel"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </address>
+        </div>
+      </nav>
     </header>
     <main>
       <!-- nav-button -->
 
       <section class="portfolio_navigation">
-        <div class="conteiner flexbox">
+        <div class="conteiner flexbox portfolio_navigation__div">
           <ul class="listt portfolio__menu">
             <li class="portfolio__menu__item">
               <button type="button" class="portfolio__menu__button">Все</button>
@@ -514,5 +585,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
