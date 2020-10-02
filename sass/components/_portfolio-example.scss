@@ -8,9 +8,6 @@
   margin-left: auto;
   margin-right: auto;
 
-  @include for-size(phone-only) {
-    width: 430px;
-  }
   @include for-size(phone) {
     width: 480px;
   }
@@ -40,9 +37,6 @@
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 
-  @include for-size(phone-only) {
-    width: 430px;
-  }
   @include for-size(phone) {
     width: 450px;
   }
