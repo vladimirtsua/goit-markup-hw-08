@@ -334,14 +334,18 @@ a {
 }
 
 .header__phone-menu__button .header__menu__icon-close {
-  display: none;
-}
-
-.header__phone-menu__button.is-open .header__menu__icon-close {
   display: block;
 }
 
+.header__phone-menu__button.is-open .header__menu__icon-close {
+  display: none;
+}
+
 .header__phone-menu__button.is-open .header__menu__icon-menu {
+  display: block;
+}
+
+.header__phone-menu__button .header__menu__icon-menu {
   display: none;
 }
 
