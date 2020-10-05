@@ -30,9 +30,20 @@
 }
 
 .clients__items {
-  margin-right: 30px;
   margin-bottom: 30px;
+  margin-right: 0px;
+  // margin-left: 0px;
+
+  @include for-size(phone) {
+    margin-right: 30px;
+  }
 }
+@media screen and (min-width: 370px) and (max-width: 479px) {
+  .clients__items {
+    margin-right: 30px;
+  }
+}
+
 .clients__items:nth-child(2n) {
   @include for-size(phone-only) {
     margin-right: 0px;
