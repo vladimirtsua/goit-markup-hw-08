@@ -14,12 +14,12 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../img/phone/headerimg.jpg);
+    url(../img/phone/Headerimg.jpg);
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url(../img/phone/headerimg@2x.jpg);
+    background-image: url(../img/phone/Headerimg@2x.jpg);
   }
 
   @include for-size(tablet) {
@@ -29,7 +29,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../img/tablet/headerimg.jpg);
+      url(../img/tablet/Headerimg.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -39,7 +39,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../img/tablet/headerimg@2x.jpg);
+        url(../img/tablet/Headerimg@2x.jpg);
     }
   }
 
@@ -60,7 +60,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../img/desktop/img@2x.jpg);
+        url(../img/desktop/Img@2x.jpg);
     }
   }
 }
